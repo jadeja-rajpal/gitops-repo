@@ -11,7 +11,7 @@ spec:
     path: charts/payments
   destination:
     server: https://kubernetes.default.svc
-    namespace: payments
+    namespace: demo
   syncPolicy:
     automated:
       prune: true

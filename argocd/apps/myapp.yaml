@@ -11,7 +11,7 @@ spec:
     path: charts/myapp
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: demo
   syncPolicy:
     automated:
       prune: true
