@@ -1,0 +1,19 @@
+replicaCount: 2
+
+image:
+  repository: nginx          # later: <account>.dkr.ecr.<region>.amazonaws.com/myapp
+  tag: "1.27.0"              # the line you bump manually
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi
